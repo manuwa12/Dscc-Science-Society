@@ -34,6 +34,23 @@ body {
     width: 1200px;
     margin-top: 50px;
 }
+.background {
+    background-image: url('https://github.com/manuwa12/Dscc-Science-Society/blob/main/4.png?raw=true');
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Avoids tiling the image */
+    width: 100%;
+    height: 100vh; /* Makes it occupy the full viewport height */
+}
+
+/* For Mobile Screens */
+@media (max-width: 768px) {
+    .background {
+        background-size: contain; /* Adjusts the size for smaller screens */
+        height: 50vh; /* Reduce the height if needed */
+    }
+}
+
 .container {
     background-color: var(--bg-color) !important;
 }
